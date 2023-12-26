@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gellix";
+}
+
+@font-face {
+  font-family: "Gellix";
+  src: local("Gellix"), url("./font/Gellix-Regular.woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GothamBook";
+  src: local("GothamBook"), url("./font/Gellix-SemiBold.woff");
+  font-weight: bold;
+}
+
+input[type="file"] {
+  opacity: 0;
+  position: "relative"
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
