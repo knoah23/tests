@@ -1,9 +1,11 @@
 import { MdCreditCard } from "react-icons/md";
 import { Header } from "../../component";
+import { useNavigate } from "react-router-dom";
 
 export default function PaymentPage() {
   const balance = "2000.00";
   const price = "1000";
+  const navigate = useNavigate();
   return (
     <>
       <Header title='Back' />
@@ -24,7 +26,9 @@ export default function PaymentPage() {
           <span className='text-neutral-content'>
             You must pay workmanship fee to validate request.
           </span>
-          <button className='btn btn-primary'>Pay {price} NGN</button>
+          <button onClick={() => navigate("/home")} className='btn btn-primary'>
+            Pay {price} NGN
+          </button>
         </div>
       </div>
     </>

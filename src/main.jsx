@@ -3,9 +3,20 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import {
+  AllImages,
+  AllServices,
+  ArtisianProfile,
+  ChangePhoneNumberPage,
+  CreatedJobs,
   FullNamePage,
   FundWalletPage,
+  HelpAndSupportPage,
+  HistoryDetailsPage,
+  HistoryPage,
   Home,
+  InboxDetailsPage,
+  InboxPage,
+  JobDetail,
   LocationPage,
   ManualLocationPage,
   OTPPage,
@@ -15,6 +26,8 @@ import {
   SplashScreen,
   TermsAndConditions,
   UploadImagePage,
+  UserAccountPage,
+  WalletPage,
   WelcomePage,
   WorkmanshipFeePage,
 } from "./pages/index";
@@ -78,6 +91,66 @@ const router = createBrowserRouter([
   {
     path: "/payment",
     element: <PaymentPage />,
+  },
+  {
+    path: "/services",
+    element: <AllServices />,
+  },
+  {
+    path: "/created-jobs",
+    element: <CreatedJobs />,
+  },
+  {
+    path: "/job-detail",
+    element: <JobDetail />,
+  },
+  {
+    path: "/aritisian-profile",
+    element: <ArtisianProfile />,
+  },
+  {
+    path: "/images",
+    element: <AllImages />,
+  },
+
+  // INBOX RELATED PAGES
+  {
+    path: "/inbox",
+    element: <InboxPage />,
+  },
+  {
+    path: "/inbox-details",
+    element: <InboxDetailsPage />,
+  },
+
+  // HISTORY RELATED PAGES
+  {
+    path: "/history",
+    element: <HistoryPage />,
+  },
+  {
+    path: "/history-details",
+    element: <HistoryDetailsPage />,
+  },
+
+  // WALLET RELATED PAGES
+  {
+    path: "/wallet",
+    element: <WalletPage />,
+  },
+
+  // USER ACCOUNT RELATED PAGES
+  {
+    path: "/user-account",
+    element: <UserAccountPage />,
+  },
+  {
+    path: "/change-number",
+    element: <ChangePhoneNumberPage />,
+  },
+  {
+    path: "/help",
+    element: <HelpAndSupportPage />,
   },
 ]);
 
