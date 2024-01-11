@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Navbar } from "../../component";
+import { MobileHeader } from "../../component";
 import { FaAngleRight } from "react-icons/fa";
 
 export default function UserAccountPage() {
@@ -9,7 +9,7 @@ export default function UserAccountPage() {
 
   return (
     <>
-      <Navbar />
+      <MobileHeader />
       <div className='pt-24 pb-12 px-4 flex flex-col gap-16'>
         <div className='flex flex-col gap-2 items-center'>
           <img

@@ -1,5 +1,5 @@
 import { RiSearchLine } from "react-icons/ri";
-import { HistoryItem, Input, Navbar } from "../../component";
+import { HistoryItem, Input, MobileHeader } from "../../component";
 
 export default function HistoryPage() {
   const histories = [
@@ -24,7 +24,7 @@ export default function HistoryPage() {
   ];
   return (
     <>
-      <Navbar />
+      <MobileHeader />
 
       <div className='pt-24 pb-12 px-4 flex flex-col gap-8'>
         <h1 className='text-2xl font-bold'>History</h1>

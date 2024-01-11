@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         splash: "url('/public/HandyMan.jpg')",
+        grid: "url('/public/GridBg.png')",
       },
     },
   },

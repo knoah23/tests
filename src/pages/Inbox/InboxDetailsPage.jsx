@@ -32,6 +32,7 @@ export default function InboxDetailsPage({ pro }) {
             <a href='tel:+2348023562567' className='btn'>
               <HiOutlinePhone size={20} />
             </a>
+            <button className='btn btn-square btn-primary'>Done</button>
           </div>
         </div>
       </div>

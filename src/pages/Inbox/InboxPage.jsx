@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import { Header, InboxItem, Input, Navbar } from "../../component";
+import { Header, InboxItem, Input, MobileHeader } from "../../component";
 import { RiSearchLine } from "react-icons/ri";
 import { MdOutlineStarOutline } from "react-icons/md";
 
 export default function InboxPage() {
   return (
     <>
-      <Navbar />
+      <MobileHeader />
       <div className='pt-24 px-4 pb-12 flex flex-col gap-8'>
         <h1 className='text-3xl font-bold text-gray-900'>Inbox</h1>
 

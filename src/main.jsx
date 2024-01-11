@@ -3,10 +3,12 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import {
+  AboutUs,
   AllImages,
   AllServices,
   ArtisianProfile,
   ChangePhoneNumberPage,
+  Contact,
   CreatedJobs,
   FullNamePage,
   FundWalletPage,
@@ -17,9 +19,11 @@ import {
   InboxDetailsPage,
   InboxPage,
   JobDetail,
+  LandingPage,
   LocationPage,
   ManualLocationPage,
   OTPPage,
+  OurServices,
   PaymentPage,
   PhoneNumberPage,
   PostRequestPage,
@@ -34,12 +38,28 @@ import {
 
 const router = createBrowserRouter([
   {
+    path: "/",
+    element: <LandingPage />,
+  },
+  {
     path: "/home",
     element: <Home />,
   },
+  {
+    path: "/about",
+    element: <AboutUs />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
+    path: "/our-services",
+    element: <OurServices />,
+  },
   // ONBOARDING PAGES
   {
-    path: "/",
+    path: "/splash",
     element: <SplashScreen />,
   },
   {

@@ -1,5 +1,5 @@
 import { IoMdCut } from "react-icons/io";
-import { CraftsmenPins, HistoryItem, Loader, Navbar } from "../component";
+import { CraftsmenPins, HistoryItem, Loader, MobileHeader } from "../component";
 import GoogleMapReact from "google-map-react";
 import { PiBroomBold } from "react-icons/pi";
 import { GiWoodenChair } from "react-icons/gi";
@@ -64,7 +64,7 @@ export default function Home() {
   return (
     <>
       <div className='relative'>
-        <Navbar />
+        <MobileHeader />
         <div className='h-screen w-full'>
           <GoogleMapReact
             bootstrapURLKeys={{ key: "api-key here" }}

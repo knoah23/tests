@@ -1,4 +1,8 @@
 export { default as Home } from "./Home";
+export { default as LandingPage } from "./LandingPage";
+export { default as AboutUs } from "./AboutUs";
+export { default as Contact } from "./Contact";
+export { default as OurServices } from "./OurServices";
 
 // ONBORADING PAGES
 export { default as SplashScreen } from "./onboarding/SplashScreen";

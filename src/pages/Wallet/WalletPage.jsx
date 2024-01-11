@@ -1,9 +1,9 @@
-import { Navbar } from "../../component";
+import { MobileHeader } from "../../component";
 
 export default function WalletPage() {
   return (
     <>
-      <Navbar />
+      <MobileHeader />
       <div className='pt-24 pb-12 px-4 flex flex-col gap-8'>
         <h1 className='text-2xl font-bold'>My Wallet</h1>
 
