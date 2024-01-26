@@ -27,6 +27,7 @@ import {
   PaymentPage,
   PhoneNumberPage,
   PostRequestPage,
+  PrivacyPolicy,
   SplashScreen,
   TermsAndConditions,
   UploadImagePage,
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
   {
     path: "/our-services",
     element: <OurServices />,
+  },
+  {
+    path: "/privacy-policy",
+    element: <PrivacyPolicy />,
   },
   // ONBOARDING PAGES
   {

@@ -130,14 +130,14 @@ export default function OurServices() {
   return (
     <>
       <Navbar />
-      <div className='flex flex-col gap-32 pt-24'>
+      <div className='flex flex-col md:gap-32 gap-16 pt-24 '>
         <section>
-          <div className='max-w-6xl mx-auto'>
+          <div className='max-w-6xl mx-auto px-4 md:px-0'>
             <div className='flex flex-col gap-2'>
               <div className='badge badge-secondary badge-outline bg-[#EBFAEC]'>
                 <img src='/BadgeLogo.svg' alt='logo' className='w-20 h-auto' />
               </div>
-              <h1 className='font-bold text-4xl'>Our Services</h1>
+              <h1 className='font-bold text-3xl md:text-4xl'>Our Services</h1>
             </div>
             <span className='text-xl'>
               Our artisanal services to help with your needs
@@ -146,7 +146,7 @@ export default function OurServices() {
         </section>
 
         <section>
-          <div className='grid grid-cols-6 w-full max-w-6xl mx-auto gap-4 items-center'>
+          <div className='px-4 md:px-0 grid grid-cols-1 md:grid-cols-6 w-full max-w-6xl mx-auto gap-4 items-center'>
             {services.map((service) => {
               return (
                 <div
@@ -167,11 +167,11 @@ export default function OurServices() {
           </div>
         </section>
 
-        <section className='flex flex-col items-center py-12 gap-8 bg-primary text-white'>
+        <section className='flex flex-col items-center py-12 gap-8 bg-primary text-white px-4 md:px-0'>
           <div className='max-w-7xl mx-auto space-y-4'>
-            <div className='flex items-center gap-4 max-w-xl'>
+            <div className='flex items-start md:items-center gap-4 max-w-xl'>
               <img src='Star.svg' alt='green star' className='w-24 h-auto' />
-              <span className='text-4xl font-bold text-center'>
+              <span className='text-2xl md:text-4xl font-bold text-center'>
                 WE ARE HERE TO GIVE YOU 100% SATISFACTION!
               </span>
               <img src='Star.svg' alt='green star' className='w-24 h-auto' />
@@ -181,7 +181,7 @@ export default function OurServices() {
               <img
                 src='Rocket1.svg'
                 alt='green star'
-                className='w-24 h-24 object-contain'
+                className='md:w-24 md:h-24 w-12 h-12 object-contain'
               />
               <span className='text-white text-center'>
                 Get on board with us
@@ -189,12 +189,12 @@ export default function OurServices() {
               <img
                 src='Rocket2.svg'
                 alt='green star'
-                className='w-24 h-24 object-contain'
+                className='md:w-24 md:h-24 w-12 h-12 object-contain'
               />
             </div>
 
             <div className='flex justify-center'>
-              <button className='btn btn-wide'>Get Started</button>
+              <button className='btn btn-block md:btn-wide'>Get Started</button>
             </div>
           </div>
         </section>

@@ -3,6 +3,7 @@ export { default as LandingPage } from "./LandingPage";
 export { default as AboutUs } from "./AboutUs";
 export { default as Contact } from "./Contact";
 export { default as OurServices } from "./OurServices";
+export { default as PrivacyPolicy } from "./PrivacyPolicy";
 
 // ONBORADING PAGES
 export { default as SplashScreen } from "./onboarding/SplashScreen";

@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { TiSocialFacebook } from "react-icons/ti";
 
 function footer({ links = true }) {
   const menuData = [
@@ -29,7 +30,7 @@ function footer({ links = true }) {
     },
   ];
   return (
-    <footer className='pt-32 w-full flex flex-col items-center justify-center md:px-0'>
+    <footer className='pt-32 w-full flex flex-col items-center justify-center md:px-0 gap-4'>
       <div className='flex flex-wrap justify-between items-start w-full px-8 md:max-w-6xl md:px-0'>
         <div className='w-full text-left md:max-w-sm'>
           <img src='/LogoMark.svg' alt=' logo' className='w-32 h-auto mb-6' />
@@ -64,9 +65,9 @@ function footer({ links = true }) {
         )}
       </div>
 
-      <div className='py-20 pb-10 px-8 md:px-0 w-full md:max-w-6xl flex flex-wrap items-center justify-between border-t border-neutral-content'>
+      <div className='py-4 md:py-20 pb-10 px-8 md:px-0 w-full md:max-w-6xl flex flex-wrap items-center justify-between border-t border-neutral-content'>
         <span>Copyright © 2024. CraftsmenVilla.</span>
-        <ul className='flex w-full md:w-auto pt-10 md:pt-0 items-center gap-10 md:justify-center justify-between text-primary'>
+        <ul className='flex w-full md:w-auto pt-10 md:pt-0 items-center gap-4 md:gap-10 justify-center text-primary'>
           <li>
             <a href='/'>
               <FaXTwitter size={24} />
@@ -74,7 +75,7 @@ function footer({ links = true }) {
           </li>
           <li>
             <a href='/'>
-              <FaFacebookF size={24} />
+              <TiSocialFacebook size={30} />
             </a>
           </li>
           <li>
