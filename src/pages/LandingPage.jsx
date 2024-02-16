@@ -9,6 +9,7 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import { BsPlus } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function LandingPage() {
   const testimonies = [
@@ -72,9 +73,12 @@ export default function LandingPage() {
             <span className='text-neutral-content'>
               Your Trusted Hub For Skilled Artisans with Opportunities!
             </span>
-            <button className='btn btn-primary btn-block md btn-block:md:btn-wide'>
+            <Link
+              to='/welcome'
+              className='btn btn-primary btn-block md btn-block:md:btn-wide'
+            >
               Get Started
-            </button>
+            </Link>
           </div>
           {/* IMAGE GRID */}
           <div className='bg-base-100 md:bg-grid py-10 grid grid-cols-1 md:grid-cols-4 w-full max-w-6xl mx-auto gap-12 md:gap-4 items-center'>

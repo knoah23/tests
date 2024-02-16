@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Input } from "../../component";
 import Header from "../../component/Header";
+import { CiCircleInfo } from "react-icons/ci";
 
 export default function PhoneNumberPage() {
   const navigate = useNavigate();
@@ -9,6 +10,9 @@ export default function PhoneNumberPage() {
       <Header title='Back' />
       <div className='my-24 px-4 space-y-24 max-w-4xl mx-auto'>
         <div className='space-y-16'>
+          <div className='badge badge-secondary badge-outline bg-[#EBFAEC] gap-2'>
+            <CiCircleInfo /> Continuing as a USER
+          </div>
           <div>
             <h1 className='font-bold mb-4 text-xl'>Enter your phone number</h1>
             <div className='flex gap-4'>
