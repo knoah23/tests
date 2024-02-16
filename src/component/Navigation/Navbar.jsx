@@ -107,7 +107,9 @@ export default function Navbar() {
             >
               Contact Us
             </Link>
-            <button className='btn btn-primary'>Get Started</button>
+            <Link to='/splash' className='btn btn-primary'>
+              Get Started
+            </Link>
           </ul>
         </div>
       )}

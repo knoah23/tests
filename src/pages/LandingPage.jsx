@@ -74,7 +74,7 @@ export default function LandingPage() {
               Your Trusted Hub For Skilled Artisans with Opportunities!
             </span>
             <Link
-              to='/welcome'
+              to='/splash'
               className='btn btn-primary btn-block md btn-block:md:btn-wide'
             >
               Get Started
